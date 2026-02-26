@@ -1,7 +1,7 @@
 NAMES = ["John", "Paul", "George", "Ringo"]
 AGES = [20, 21, 22, 23]
 
-i = 0
+i          = 0
 while i < len(NAMES):
     print(NAMES[i], AGES[i])
     i += 1
@@ -14,8 +14,10 @@ for name, age in zip(NAMES, AGES):
 
 for name in reversed(NAMES):
     print(name)
-
+print(i)
 for i in range(5):
     print(i)
-
+print(i)
 # enumerate
+for i,name in enumerate(NAMES):
+    print(f"{i} {name}")
