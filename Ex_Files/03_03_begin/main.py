@@ -22,4 +22,7 @@ with open("laureates.csv", "r") as f:
 
 
 with open("laureates.json", "w") as f:
+    einstein_json = json.dumps(laureates, indent=2)
+    print('hello')
+    print(einstein_json)
     json.dump(laureates, f, indent=2)
